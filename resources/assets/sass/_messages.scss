@@ -1,0 +1,44 @@
+.custum-msg-success,.custum-msg-danger,.custum-msg-info{
+  min-width: 200px;
+  top: 50px;
+  right: 10px;
+  position: fixed;
+  border-radius: 5px;
+  padding: 10px;
+  display: none;
+  z-index: 999
+}
+.custum-msg-success::after,.custum-msg-danger::after,.custum-msg-info::after{
+  content: "";
+  position: absolute;
+  border-left: 10px solid transparent;
+  border-left: 20px solid transparent;
+  transform: rotate(130deg);
+  right: -5px;
+  top: 0px;
+
+}
+.custum-msg-success{
+    color: #3c763d;
+    background-color: #dff0d8;
+    border-color: #d6e9c6;
+}
+.custum-msg-success::after{
+   border-top: 20px solid #dff0d8;
+}
+.custum-msg-danger{
+  color: #a94442;
+background-color: #f2dede;
+border-color: #ebccd1;
+}
+.custum-msg-danger::after{
+   border-top: 20px solid #f2dede;
+}
+.custum-msg-info{
+  color: #31708f;
+  background-color: #d9edf7;
+  border-color: #bce8f1;
+}
+.custum-msg-info::after{
+   border-top: 20px solid #d9edf7;
+}
